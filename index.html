@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Aléatoire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quizapp">
+        <!-- En tete -->
+        <div class="quizheader">
+            <h1>Quiz Aléatoire</h1>
+            <p>Tester Vos Connaissances Sur divers Sujets</p>
+        </div>
+
+        <!-- Contenu Principale-->
+        <div class="quizcontenaire">
+            <!-- Ecran d'accueil -->
+            <div class="home">
+                <h2>Choisissez Une Catégorie</h2>
+                <div class="categorie" id="categoriecontenaire">
+                    <!-- les catégories seront générées par js -->
+                </div>
+                <button class="btn btn-secondaire" id="randomquiz">Quiz Aléatoire</button>
+            </div>
+
+            <!-- Ecran de quiz (caché initialement) -->
+            <div class="quizcache" id="quizcache">
+                <div class="questionsinfo">
+                    <span class="categories1" id="quizcategories1">Catégories</span>
+                    <span class="count" id="questionscount">Question 1/10</span>
+                </div>
+
+                <div class="progresscontenaire">
+                    <div class="progressbar" id="progressbar"></div>
+                </div>
+
+                <div class="questiontexte" id="questiontexte">
+                    Question chargement...
+                </div>
+
+                <div class="reponses" id="reponsescontainer">
+                    <!-- Les réponses seront générées par Js -->
+                </div>
+            </div>
+
+            <!-- Ecran des résultats (caché initialement) -->
+            <div class="ecranresultat" id="ecranresultat">
+                <h2>Résultat Du Quiz</h2>
+                <div class="score" id="scorefinal">0/0</div>
+                <div class="pourcentage" id="pourcentage">0% de bonnes réponses</div>
+                <p class="message" id="resultmessage">
+                    Message de résultat...
+                </p>
+
+                <div class="actions">
+                    <button class="btn btn-primaire" id="restartquiz">Recommencer</button>
+                    <button class="btn btn-secondaire" id="newquiz">Nouveau Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
